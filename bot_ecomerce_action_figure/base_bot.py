@@ -1,10 +1,8 @@
 from botcity.web import WebBot, Browser
-from botcity.web.browsers.chrome import default_options
 from bs4 import BeautifulSoup
-from selenium import webdriver
 import pandas as pd
-import openpyxl
 import requests
+
 
 class BotEcomerce(WebBot):
 
@@ -92,6 +90,7 @@ class BotEcomerce(WebBot):
 
         # find the box of each product, and its respective product name
         self.product_list_ebay = self.soup_ebay.find_all('div', attrs={'class': 's-item__image'})
+
 
         # creat list for store link of each box found previously
         self.list_ebay = []

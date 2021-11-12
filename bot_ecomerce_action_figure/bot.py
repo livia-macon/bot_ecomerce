@@ -1,10 +1,9 @@
 from botcity.web import WebBot, Browser
-from botcity.web.browsers.chrome import default_options
+from base_bot import BotEcomerce
 from bs4 import BeautifulSoup
 import pandas as pd
-import openpyxl
 import requests
-from base_bot import BotEcomerce
+
 
 class Bot(WebBot):
 
